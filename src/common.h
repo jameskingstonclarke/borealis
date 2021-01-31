@@ -2,8 +2,7 @@
 // Created by jking on 30/01/2021.
 //
 
-#ifndef COCOA_COMMON_H
-#define COCOA_COMMON_H
+#pragma once
 
 #include <string>
 #include <vector>
@@ -16,10 +15,4 @@
 #define u32 uint32_t
 #define s32 int32_t
 #define f64 double
-#define str std::string
 #define vec std::vector
-
-
-
-
-#endif //COCOA_COMMON_H

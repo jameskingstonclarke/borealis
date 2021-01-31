@@ -1756,14 +1756,14 @@ class dynamic_format_arg_store
     **Example**::
 
       fmt::dynamic_format_arg_store<fmt::format_context> store;
-      char str[] = "1234567890";
-      store.push_back(std::cref(str));
+      char string[] = "1234567890";
+      store.push_back(std::cref(string));
       int a1_val{42};
       auto a1 = fmt::arg("a1_", a1_val);
       store.push_back(std::cref(a1));
 
-      // Changing str affects the output but only for string and custom types.
-      str[0] = 'X';
+      // Changing string affects the output but only for string and custom types.
+      string[0] = 'X';
 
       std::string result = fmt::vformat("{} and {a1_}");
       assert(result == "X234567890 and 42");

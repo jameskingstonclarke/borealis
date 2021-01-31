@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\src\cocoa
+CMAKE_SOURCE_DIR = C:\src\borealis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\src\cocoa\cmake-build-debug
+CMAKE_BINARY_DIR = C:\src\borealis\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\src\cocoa\cmake-build-debug\CMakeFiles C:\src\cocoa\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\src\borealis\cmake-build-debug\CMakeFiles C:\src\borealis\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\src\cocoa\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\src\borealis\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,450 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cocoa
+# Target rules for targets named main
 
 # Build rule for target.
-cocoa: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cocoa
-.PHONY : cocoa
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-cocoa/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/build
-.PHONY : cocoa/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemoryCheck
+
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyMemoryCheck.dir\build.make vendor/Catch2/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\Experimental.dir\build.make vendor/Catch2/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named NightlySubmit
+
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlySubmit
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlySubmit.dir\build.make vendor/Catch2/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyConfigure.dir\build.make vendor/Catch2/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyBuild.dir\build.make vendor/Catch2/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
+# Target rules for targets named NightlyStart
+
+# Build rule for target.
+NightlyStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyStart
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyStart.dir\build.make vendor/Catch2/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+#=============================================================================
+# Target rules for targets named Continuous
+
+# Build rule for target.
+Continuous: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Continuous
+.PHONY : Continuous
+
+# fast build rule for target.
+Continuous/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\Continuous.dir\build.make vendor/Catch2/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
+
+#=============================================================================
+# Target rules for targets named NightlyTest
+
+# Build rule for target.
+NightlyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyTest
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyTest.dir\build.make vendor/Catch2/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
+
+#=============================================================================
+# Target rules for targets named Nightly
+
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Nightly
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\Nightly.dir\build.make vendor/Catch2/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
+
+#=============================================================================
+# Target rules for targets named NightlyUpdate
+
+# Build rule for target.
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyUpdate.dir\build.make vendor/Catch2/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+#=============================================================================
+# Target rules for targets named NightlyCoverage
+
+# Build rule for target.
+NightlyCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyCoverage
+.PHONY : NightlyCoverage
+
+# fast build rule for target.
+NightlyCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyCoverage.dir\build.make vendor/Catch2/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemCheck
+
+# Build rule for target.
+NightlyMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 NightlyMemCheck
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\NightlyMemCheck.dir\build.make vendor/Catch2/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalBuild
+
+# Build rule for target.
+ExperimentalBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalBuild
+.PHONY : ExperimentalBuild
+
+# fast build rule for target.
+ExperimentalBuild/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalBuild.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalStart
+
+# Build rule for target.
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalStart.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalUpdate
+
+# Build rule for target.
+ExperimentalUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalUpdate
+.PHONY : ExperimentalUpdate
+
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalUpdate.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousMemCheck.dir\build.make vendor/Catch2/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalConfigure
+
+# Build rule for target.
+ExperimentalConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalConfigure
+.PHONY : ExperimentalConfigure
+
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalConfigure.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalTest.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalCoverage
+
+# Build rule for target.
+ExperimentalCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalCoverage
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalCoverage.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalMemCheck.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ExperimentalSubmit.dir\build.make vendor/Catch2/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousStart
+
+# Build rule for target.
+ContinuousStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousStart
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousStart.dir\build.make vendor/Catch2/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousUpdate
+
+# Build rule for target.
+ContinuousUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousUpdate
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousUpdate.dir\build.make vendor/Catch2/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousSubmit
+
+# Build rule for target.
+ContinuousSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousSubmit
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousSubmit.dir\build.make vendor/Catch2/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousConfigure
+
+# Build rule for target.
+ContinuousConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousConfigure
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousConfigure.dir\build.make vendor/Catch2/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousBuild
+
+# Build rule for target.
+ContinuousBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousBuild
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousBuild.dir\build.make vendor/Catch2/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousTest
+
+# Build rule for target.
+ContinuousTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousTest
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousTest.dir\build.make vendor/Catch2/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\CMakeFiles\ContinuousCoverage.dir\build.make vendor/Catch2/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named Catch2
+
+# Build rule for target.
+Catch2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Catch2
+.PHONY : Catch2
+
+# fast build rule for target.
+Catch2/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\src\CMakeFiles\Catch2.dir\build.make vendor/Catch2/src/CMakeFiles/Catch2.dir/build
+.PHONY : Catch2/fast
+
+#=============================================================================
+# Target rules for targets named Catch2WithMain
+
+# Build rule for target.
+Catch2WithMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Catch2WithMain
+.PHONY : Catch2WithMain
+
+# fast build rule for target.
+Catch2WithMain/fast:
+	$(MAKE) $(MAKESILENT) -f vendor\Catch2\src\CMakeFiles\Catch2WithMain.dir\build.make vendor/Catch2/src/CMakeFiles/Catch2WithMain.dir/build
+.PHONY : Catch2WithMain/fast
+
+src/address.obj: src/address.cpp.obj
+
+.PHONY : src/address.obj
+
+# target to build an object file
+src/address.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/address.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/address.cpp.obj
+.PHONY : src/address.cpp.obj
+
+src/address.i: src/address.cpp.i
+
+.PHONY : src/address.i
+
+# target to preprocess a source file
+src/address.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/address.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/address.cpp.i
+.PHONY : src/address.cpp.i
+
+src/address.s: src/address.cpp.s
+
+.PHONY : src/address.s
+
+# target to generate assembly for a file
+src/address.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/address.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/address.cpp.s
+.PHONY : src/address.cpp.s
 
 src/block.obj: src/block.cpp.obj
 
@@ -148,7 +581,8 @@ src/block.obj: src/block.cpp.obj
 
 # target to build an object file
 src/block.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/block.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/block.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/block.cpp.obj
 .PHONY : src/block.cpp.obj
 
 src/block.i: src/block.cpp.i
@@ -157,7 +591,8 @@ src/block.i: src/block.cpp.i
 
 # target to preprocess a source file
 src/block.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/block.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/block.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/block.cpp.i
 .PHONY : src/block.cpp.i
 
 src/block.s: src/block.cpp.s
@@ -166,7 +601,8 @@ src/block.s: src/block.cpp.s
 
 # target to generate assembly for a file
 src/block.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/block.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/block.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/block.cpp.s
 .PHONY : src/block.cpp.s
 
 src/blockchain.obj: src/blockchain.cpp.obj
@@ -175,7 +611,8 @@ src/blockchain.obj: src/blockchain.cpp.obj
 
 # target to build an object file
 src/blockchain.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/blockchain.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/blockchain.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/blockchain.cpp.obj
 .PHONY : src/blockchain.cpp.obj
 
 src/blockchain.i: src/blockchain.cpp.i
@@ -184,7 +621,8 @@ src/blockchain.i: src/blockchain.cpp.i
 
 # target to preprocess a source file
 src/blockchain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/blockchain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/blockchain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/blockchain.cpp.i
 .PHONY : src/blockchain.cpp.i
 
 src/blockchain.s: src/blockchain.cpp.s
@@ -193,8 +631,69 @@ src/blockchain.s: src/blockchain.cpp.s
 
 # target to generate assembly for a file
 src/blockchain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/blockchain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/blockchain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/blockchain.cpp.s
 .PHONY : src/blockchain.cpp.s
+
+src/crypto.obj: src/crypto.cpp.obj
+
+.PHONY : src/crypto.obj
+
+# target to build an object file
+src/crypto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/crypto.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/crypto.cpp.obj
+.PHONY : src/crypto.cpp.obj
+
+src/crypto.i: src/crypto.cpp.i
+
+.PHONY : src/crypto.i
+
+# target to preprocess a source file
+src/crypto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/crypto.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/crypto.cpp.i
+.PHONY : src/crypto.cpp.i
+
+src/crypto.s: src/crypto.cpp.s
+
+.PHONY : src/crypto.s
+
+# target to generate assembly for a file
+src/crypto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/crypto.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/crypto.cpp.s
+.PHONY : src/crypto.cpp.s
+
+src/key.obj: src/key.cpp.obj
+
+.PHONY : src/key.obj
+
+# target to build an object file
+src/key.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/key.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/key.cpp.obj
+.PHONY : src/key.cpp.obj
+
+src/key.i: src/key.cpp.i
+
+.PHONY : src/key.i
+
+# target to preprocess a source file
+src/key.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/key.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/key.cpp.i
+.PHONY : src/key.cpp.i
+
+src/key.s: src/key.cpp.s
+
+.PHONY : src/key.s
+
+# target to generate assembly for a file
+src/key.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/key.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/key.cpp.s
+.PHONY : src/key.cpp.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -202,7 +701,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -211,7 +710,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -220,8 +719,65 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/miner.obj: src/miner.cpp.obj
+
+.PHONY : src/miner.obj
+
+# target to build an object file
+src/miner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/miner.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/miner.cpp.obj
+.PHONY : src/miner.cpp.obj
+
+src/miner.i: src/miner.cpp.i
+
+.PHONY : src/miner.i
+
+# target to preprocess a source file
+src/miner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/miner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/miner.cpp.i
+.PHONY : src/miner.cpp.i
+
+src/miner.s: src/miner.cpp.s
+
+.PHONY : src/miner.s
+
+# target to generate assembly for a file
+src/miner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/miner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/miner.cpp.s
+.PHONY : src/miner.cpp.s
+
+src/test.obj: src/test.cpp.obj
+
+.PHONY : src/test.obj
+
+# target to build an object file
+src/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/test.cpp.obj
+.PHONY : src/test.cpp.obj
+
+src/test.i: src/test.cpp.i
+
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
 
 src/transaction.obj: src/transaction.cpp.obj
 
@@ -229,7 +785,8 @@ src/transaction.obj: src/transaction.cpp.obj
 
 # target to build an object file
 src/transaction.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/transaction.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/transaction.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/transaction.cpp.obj
 .PHONY : src/transaction.cpp.obj
 
 src/transaction.i: src/transaction.cpp.i
@@ -238,7 +795,8 @@ src/transaction.i: src/transaction.cpp.i
 
 # target to preprocess a source file
 src/transaction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/transaction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/transaction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/transaction.cpp.i
 .PHONY : src/transaction.cpp.i
 
 src/transaction.s: src/transaction.cpp.s
@@ -247,7 +805,8 @@ src/transaction.s: src/transaction.cpp.s
 
 # target to generate assembly for a file
 src/transaction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/transaction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/transaction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/transaction.cpp.s
 .PHONY : src/transaction.cpp.s
 
 src/wallet.obj: src/wallet.cpp.obj
@@ -256,7 +815,8 @@ src/wallet.obj: src/wallet.cpp.obj
 
 # target to build an object file
 src/wallet.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/wallet.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/wallet.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/wallet.cpp.obj
 .PHONY : src/wallet.cpp.obj
 
 src/wallet.i: src/wallet.cpp.i
@@ -265,7 +825,8 @@ src/wallet.i: src/wallet.cpp.i
 
 # target to preprocess a source file
 src/wallet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/wallet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/wallet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/wallet.cpp.i
 .PHONY : src/wallet.cpp.i
 
 src/wallet.s: src/wallet.cpp.s
@@ -274,7 +835,8 @@ src/wallet.s: src/wallet.cpp.s
 
 # target to generate assembly for a file
 src/wallet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cocoa.dir\build.make CMakeFiles/cocoa.dir/src/wallet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/wallet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/wallet.cpp.s
 .PHONY : src/wallet.cpp.s
 
 # Help Target
@@ -285,16 +847,62 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... cocoa
+	@echo ... Continuous
+	@echo ... ContinuousBuild
+	@echo ... ContinuousConfigure
+	@echo ... ContinuousCoverage
+	@echo ... ContinuousMemCheck
+	@echo ... ContinuousStart
+	@echo ... ContinuousSubmit
+	@echo ... ContinuousTest
+	@echo ... ContinuousUpdate
+	@echo ... Experimental
+	@echo ... ExperimentalBuild
+	@echo ... ExperimentalConfigure
+	@echo ... ExperimentalCoverage
+	@echo ... ExperimentalMemCheck
+	@echo ... ExperimentalStart
+	@echo ... ExperimentalSubmit
+	@echo ... ExperimentalTest
+	@echo ... ExperimentalUpdate
+	@echo ... Nightly
+	@echo ... NightlyBuild
+	@echo ... NightlyConfigure
+	@echo ... NightlyCoverage
+	@echo ... NightlyMemCheck
+	@echo ... NightlyMemoryCheck
+	@echo ... NightlyStart
+	@echo ... NightlySubmit
+	@echo ... NightlyTest
+	@echo ... NightlyUpdate
+	@echo ... Catch2
+	@echo ... Catch2WithMain
+	@echo ... main
+	@echo ... test
+	@echo ... src/address.obj
+	@echo ... src/address.i
+	@echo ... src/address.s
 	@echo ... src/block.obj
 	@echo ... src/block.i
 	@echo ... src/block.s
 	@echo ... src/blockchain.obj
 	@echo ... src/blockchain.i
 	@echo ... src/blockchain.s
+	@echo ... src/crypto.obj
+	@echo ... src/crypto.i
+	@echo ... src/crypto.s
+	@echo ... src/key.obj
+	@echo ... src/key.i
+	@echo ... src/key.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/miner.obj
+	@echo ... src/miner.i
+	@echo ... src/miner.s
+	@echo ... src/test.obj
+	@echo ... src/test.i
+	@echo ... src/test.s
 	@echo ... src/transaction.obj
 	@echo ... src/transaction.i
 	@echo ... src/transaction.s

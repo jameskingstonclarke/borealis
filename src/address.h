@@ -2,13 +2,16 @@
 // Created by jking on 30/01/2021.
 //
 
-#ifndef COCOA_ADDRESS_H
-#define COCOA_ADDRESS_H
+
+#pragma once
 
 #include "common.h"
+#include "key.h"
 
 struct Address {
-    str m_destination;
-};
+    Key m_addr;
 
-#endif //COCOA_ADDRESS_H
+    static Address create(Key addr);
+    bool operator==(const Address other) const;
+    u8 eql(Address& other) const;
+};

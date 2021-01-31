@@ -3879,11 +3879,11 @@ template <typename Char, Char... CHARS> class udl_formatter {
 };
 #  else
 template <typename Char> struct udl_formatter {
-  basic_string_view<Char> str;
+  basic_string_view<Char> string;
 
   template <typename... Args>
   std::basic_string<Char> operator()(Args&&... args) const {
-    return format(str, std::forward<Args>(args)...);
+    return format(string, std::forward<Args>(args)...);
   }
 };
 #  endif  // FMT_USE_UDL_TEMPLATE
